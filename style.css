@@ -104,3 +104,47 @@ a{
 .card-body > p, h4, span{
     font-family: 'Poppins', sans-serif;
 }
+
+/* Sidebar Toggle */
+
+#sidebar.collapsed {
+    margin-left: -264px;
+}
+
+/* Footer and Nav */
+
+@media (max-width: 767.98px){
+    .navbar, footer{
+        width: 100vw;
+    }
+}
+
+/* Theme Toggler */
+
+.theme-toggle{
+    position: fixed;
+    top: 50%;
+    transform: translate(-85%);
+    text-align: center;
+    z-index: 10;
+    right: 0;
+    left: auto;
+    border: none;
+}
+
+html[data-bs-theme="dark"] .theme-toggle .fa-sun,
+html[data-bs-theme="light"] .theme-toggle .fa-moon{
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    font-size: 1.25rem;
+    color: white;
+}
+
+html[data-bs-theme="dark"] .theme-toggle .fa-moon{
+    display: none;
+}
+
+html[data-bs-theme="light"] .theme-toggle .fa-sun{
+    display: none;
+}
