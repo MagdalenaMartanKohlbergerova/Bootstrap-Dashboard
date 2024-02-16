@@ -23,7 +23,119 @@
 </head>
 
 <body>
-    
+    <div class="wrapper d-flex">
+        <aside id="sidebar">
+            <!-- content for sidebar -->
+            <div class="h-100 bg-dark text-light">
+                <div class="sidebar-logo ps-3 pt-4 pb-3 fw-bold fs-3">
+                    <a href="#" class="text-light">BlackBear</a>
+                </div>
+                <ul class="sidebar-nav list-group-item flex-grow-1 mb-0 ms-0 ps-0">
+                    <li class="sidebar-header text-light fs-6 ps-3 pt-3 pb-2">Admin Elements</li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link d-block text-light fs-6 ps-3 pt-2">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <!-- Admin messages -->
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed d-block text-light fs-6 ps-3 pt-4"
+                            data-bs-target="#Messages" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="fa-solid fa-file-lines pe-2"></i>
+                            Messages</a>
+                        <ul id="Messages" class="sidebar-dropdown list-group-item collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link text-opacity-50 d-block text-light fs-6 ps-3 pt-4">Send
+                                    a new message</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#"
+                                    class="sidebar-link d-block text-opacity-50 text-light fs-6 ps-3 pt-4">Recieved</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#"
+                                    class="sidebar-link d-block text-opacity-50 text-light fs-6 ps-3 pt-4">Sent</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Admin posts -->
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed d-block text-light fs-6 ps-3 pt-4"
+                            data-bs-target="#Posts" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            Posts</a>
+                        <ul id="Posts" class="sidebar-dropdown list-group-item collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link text-opacity-50 d-block text-light fs-6 ps-3 pt-4">My
+                                    latest posts</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#"
+                                    class="sidebar-link d-block text-opacity-50 text-light fs-6 ps-3 pt-4">History</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#"
+                                    class="sidebar-link d-block text-opacity-50 text-light fs-6 ps-3 pt-4">Favorite</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Admin -->
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed d-block text-light fs-6 ps-3 pt-4"
+                            data-bs-target="#User" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="fa-regular fa-user pe-2"></i>
+                            User</a>
+                        <ul id="User" class="sidebar-dropdown list-group-item collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#"
+                                    class="sidebar-link text-opacity-50 d-block text-light fs-6 ps-3 pt-4">Administrator</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link d-block text-opacity-50 text-light fs-6 ps-3 pt-4">New
+                                    User</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#"
+                                    class="sidebar-link d-block text-opacity-50 text-light fs-6 ps-3 pt-4">Analysis</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Multi level menu -->
+                    <li class="sidebar-header text-light fs-6 ps-3 pt-5">Multi Level Menu</li>
+
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed d-block text-light fs-6 ps-3 pt-4"
+                            data-bs-target="#Multi" data-bs-toggle="collapse" aria-expanded="false">
+                            <i class="fa-solid fa-share-nodes pe-2"></i>Dropdown</a>
+
+                        <ul id="Multi" class="sidebar-dropdown list-group-item collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#"
+                                    class="sidebar-link collapsed text-opacity-50 d-block text-light fs-6 ps-3 pt-4"
+                                    data-bs-target="#Level-1" data-bs-toggle="collapse" aria-expanded="false">Level
+                                    1</a>
+
+                                <ul id="Level-1" class="sidebar-dropdown list-group-item collapse">
+                                    <li class="sidebar-item">
+                                        <a href="#"
+                                            class="sidebar-link text-opacity-50 d-block text-light fs-6 ps-3 pt-4">Level
+                                            1.1</a>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a href="#"
+                                            class="sidebar-link d-block text-opacity-50 text-light fs-6 ps-3 pt-4">Level
+                                            1.2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
     <script src="script.js"></script>
 </body>
 
